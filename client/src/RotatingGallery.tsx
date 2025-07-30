@@ -63,7 +63,7 @@ const RotatingGallery = () => {
             }}
           >
             <img
-  src={`/public/${img}`}
+  src={`/${img}`}
   alt={`example-${index}`}
   onError={(e) => {
     (e.target as HTMLImageElement).src = "/person_021.png";
