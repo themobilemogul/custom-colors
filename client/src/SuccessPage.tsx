@@ -20,7 +20,7 @@ const SuccessPage = () => {
       }
 
       try {
-        const res = await fetch(`http://localhost:5000/session/${sessionId}`);
+        const res = await fetch(`https://custom-colors.onrender.com/session/${sessionId}`);
         const data = await res.json();
 
         if (!data.downloadUrl) {
@@ -28,7 +28,7 @@ const SuccessPage = () => {
         }
 
         setCoverImage(data.coverImage || null); // coverImage should be added in Stripe metadata
-        const genRes = await fetch("http://localhost:5000/generate-download-link", {
+        const genRes = await fetch("https://custom-colors.onrender.com/generate-download-link", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ downloadUrl: data.downloadUrl }),

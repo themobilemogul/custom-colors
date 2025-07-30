@@ -82,7 +82,7 @@ const CreatePage = () => {
     try {
       let response;
       if (mode === "text") {
-        response = await fetch("http://localhost:5000/generate", {
+        response = await fetch("https://custom-colors.onrender.com/generate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ prompt: item.prompt })
@@ -90,7 +90,7 @@ const CreatePage = () => {
       } else {
         const formData = new FormData();
         formData.append("image", item.inputImage!);
-        response = await fetch("http://localhost:5000/image-to-image", {
+        response = await fetch("https://custom-colors.onrender.com/image-to-image", {
           method: "POST",
           body: formData
         });
@@ -135,7 +135,7 @@ const CreatePage = () => {
   const finalImages = requests.map(r => r.finalImageUrl).filter(Boolean);
   if (finalImages.length === 0) return alert("No images to purchase!");
 
-  const res = await fetch("http://localhost:5000/checkout", {
+  const res = await fetch("https://custom-colors.onrender.com/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ images: finalImages })

@@ -72,7 +72,7 @@ const LandingPage = () => {
     {/* Original Image */}
     <div className="flex flex-col items-center">
       <img
-        src="/public/orig_home.jpg"
+        src="/orig_home.jpg"
         alt="Original"
         className="w-[220px] h-[330px] object-cover rounded-xl shadow-md"
       />
@@ -85,7 +85,7 @@ const LandingPage = () => {
     {/* Coloring Page */}
     <div className="flex flex-col items-center">
       <img
-        src="/public/person_021.png"
+        src="/person_021.png"
         alt="Coloring Page"
         className="w-[220px] h-[330px] object-cover rounded-xl shadow-md"
       />
@@ -98,7 +98,7 @@ const LandingPage = () => {
     {/* Colored Page */}
     <div className="flex flex-col items-center">
       <img
-        src="/public/filled_home.png"
+        src="/filled_home.png"
         alt="Colored Page"
         className="w-[220px] h-[330px] object-cover rounded-xl shadow-md"
       />

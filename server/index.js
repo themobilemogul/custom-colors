@@ -91,7 +91,7 @@ app.post('/generate', async (req, res) => {
         .jpeg()
         .toFile(watermarkedPath);
 
-      const host = 'http://localhost:5000';
+      const host = 'https://custom-colors.onrender.com';
       res.json({
         output: `${host}/images/${id}_watermarked.jpg`,
         final: `${host}/images/${id}_raw.jpg`
@@ -131,7 +131,7 @@ app.post('/checkout', async (req, res) => {
 
     await new Promise(resolve => stream.on('finish', resolve));
 
-    const downloadUrl = `http://localhost:5000/images/${id}_book.pdf`;
+    const downloadUrl = `https://custom-colors.onrender.com/images/${id}_book.pdf`;
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -146,8 +146,9 @@ app.post('/checkout', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `http://localhost:3000/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `http://localhost:3000/cancel`,
+      success_url: `https://www.customcolors.store/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://www.customcolors.store/cancel`,
+
       metadata: { downloadUrl }
     });
 
@@ -183,8 +184,9 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3000/success?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'http://localhost:3000/cancel',
+      success_url: `https://www.customcolors.store/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://www.customcolors.store/cancel`,
+
       metadata: {
         bookName: book.name,
         downloadUrl: book.downloadUrl || '',
@@ -243,7 +245,7 @@ app.post('/generate-download-link', (req, res) => {
   if (!downloadUrl) return res.status(400).json({ error: 'Missing download URL' });
   const token = uuidv4();
   downloadLinks.set(token, { url: downloadUrl, createdAt: Date.now() });
-  res.json({ link: `http://localhost:5000/download/${token}` });
+  res.json({ link: `https://custom-colors.onrender.com/download/${token}` });
 });
 
 app.get('/download/:token', (req, res) => {
@@ -273,5 +275,5 @@ app.get('/session/:id', async (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log('✅ Server is running on http://localhost:5000');
+  console.log('✅ Server is running on https://custom-colors.onrender.com');
 });

@@ -21,7 +21,7 @@ const ShopPage = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await fetch("http://localhost:5000/books");
+        const res = await fetch("https://custom-colors.onrender.com/books");
         const data = await res.json();
         setBooks(data);
       } catch (err) {
@@ -50,7 +50,7 @@ const ShopPage = () => {
     try {
       localStorage.setItem("purchasedBook", JSON.stringify(book));
 
-      const res = await fetch("http://localhost:5000/create-checkout-session", {
+      const res = await fetch("https://custom-colors.onrender.com/create-checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ book }),
