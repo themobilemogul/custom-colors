@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 
 interface ImageRequest {
   id: number;
@@ -21,28 +22,31 @@ const examplePrompts = [
 
 const faqs = [
   {
-    q: "What is this for?",
-    a: "Create personalized coloring books for birthdays, weddings, anniversaries, family trips, or just for fun!"
+    q: "How much does it cost?",
+    a: "$1.99 per page to remove the water mark and download as a PDF"
   },
   {
-    q: "What pictures make the best coloring book pages?",
-    a: "Use well-lit photos with minimal shadows and simple backgrounds. Less busy images produce cleaner results."
+    q: "Can purchase a physical coloring book?",
+    a: "Not yet, but very soon! For now only digital copy's will be provided upon check out"
   },
   {
-    q: "Can I use photos of people?",
-    a: "Yes! Portraits and group shots work great, especially if the faces are clearly visible."
+    q: "Can I convert my own photos to coloring book pages?",
+    a: "Not yet but soon!"
   },
   {
-    q: "What’s the best resolution or file size?",
-    a: "High-resolution images (over 1000x1000px) give the best coloring page results. Avoid blurry or pixelated photos."
+    q: "why is coloring book page look weird?",
+    a: "Our model is still learning so you may get an unexpected result. Don't worry we are working on making our model better every day!"
   },
   {
     q: "How does text-to-image generation work?",
     a: "Just describe a scene, like 'a unicorn at the beach', and our AI turns it into a black-and-white line drawing."
   },
   {
-    q: "Can I combine multiple pages into one book?",
-    a: "Yes! After creating your pages, use the checkout to order a printed custom coloring book."
+    q: "What is your return policy?",
+    a: "By checking out you agree that all sales are final. If you have any concerns please contact us at info@customcolors.store"
+  },
+  { q: "What pictures make the best coloring book pages?",
+    a: "Use well-lit photos with minimal shadows and simple backgrounds. Less busy images produce cleaner results."
   }
 ];
 
@@ -270,14 +274,15 @@ const CreatePage = () => {
         </div>
       </div>
 
-      <footer className="text-center text-sm text-gray-500 pb-10 px-6 mt-20">
-        <p className="italic mb-2">
-          Custom Colors was created to give people a peaceful space to reconnect with themselves through creativity.
-        </p>
-        <p className="mb-1">© 2025 Custom Colors. All rights reserved.</p>
-        <a href="/about" className="text-blue-500 hover:underline">About</a>
-      </footer>
-    </div>
+     {/* Footer */}
+           <footer className="text-center text-sm text-gray-500 pb-10 px-6">
+             <p className="italic mb-2">
+               Custom Colors was created to give people a peaceful space to reconnect with themselves through creativity.
+             </p>
+             <p className="mb-1">© 2025 Custom Colors. All rights reserved.</p>
+             <Link to="/about" className="text-blue-500 hover:underline">About</Link>
+           </footer>
+         </div>
   );
 };
 

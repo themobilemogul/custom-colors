@@ -10,7 +10,7 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold text-blue-700 mb-10">Terms of Service</h1>
 
         <p className="mb-4 text-sm text-gray-700">
-          <strong>Effective Date:</strong> [Insert Date]
+          <strong>Effective Date:</strong> [7/30/2025]
         </p>
         <p className="mb-6 text-sm text-gray-700">
           Welcome to Custom Colors, a website operated by International Growth Holdings LLC ("Company", "we", "our", or "us") from New York, United States. By using our site or services, you agree to be bound by these Terms of Service.
@@ -23,7 +23,7 @@ const AboutPage = () => {
 
         <h2 className="text-lg font-semibold mb-2">2. Services Offered</h2>
         <ul className="list-disc ml-5 mb-4 text-sm text-gray-700">
-          <li>AI-generated digital coloring books delivered via email</li>
+          <li>AI-generated digital coloring books delivered via digital download</li>
           <li>(Soon) Printed physical coloring books shipped within the U.S.</li>
           <li>Subscription-based and one-time purchase options</li>
           <li>All images are generated based on user-provided prompts or uploaded photos.</li>
@@ -68,7 +68,6 @@ const AboutPage = () => {
         <h2 className="text-lg font-semibold mb-2">7. Privacy</h2>
         <ul className="list-disc ml-5 mb-4 text-sm text-gray-700">
           <li>We collect user data to fulfill orders, improve experience, and communicate updates.</li>
-          <li>Data is handled per our <span className="underline">Privacy Policy</span> (link to be added).</li>
         </ul>
 
         <h2 className="text-lg font-semibold mb-2">8. Intellectual Property</h2>
@@ -102,8 +101,7 @@ const AboutPage = () => {
         <p className="mb-4 text-sm text-gray-700">
           For questions, contact:<br />
           International Growth Holdings LLC<br />
-          Email: [Insert email]<br />
-          Address: [Insert NYC business address]
+          Email: [info@customcolors.store]<br />
         </p>
 
         <p className="mt-12 text-sm text-gray-500">

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 
 const SubscriptionPage = () => {
   return (
@@ -44,13 +45,15 @@ const SubscriptionPage = () => {
         </div>
       </section>
 
-      <footer className="text-center text-sm text-gray-500 pb-10 px-6">
-        <p className="italic mb-2">
-          Join our growing community of mindful creators. Find peace through color.
-        </p>
-        <p className="mb-1">© 2025 Custom Colors. All rights reserved.</p>
-      </footer>
-    </div>
+     {/* Footer */}
+           <footer className="text-center text-sm text-gray-500 pb-10 px-6">
+             <p className="italic mb-2">
+               Custom Colors was created to give people a peaceful space to reconnect with themselves through creativity.
+             </p>
+             <p className="mb-1">© 2025 Custom Colors. All rights reserved.</p>
+             <Link to="/about" className="text-blue-500 hover:underline">About</Link>
+           </footer>
+         </div>
   );
 };
 
