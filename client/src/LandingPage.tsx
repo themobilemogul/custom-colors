@@ -11,7 +11,7 @@ const LandingPage = () => {
       {/* Hero */}
       <section className="text-center px-4 py-12 max-w-8xl mx-auto">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-blue-700 mb-6">
-          Coloring Pages for the Soul
+          Create Custom Coloring Books
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
           Whether you're creating a coloring book for a loved one or coloring to calm your mind — Custom Colors is here for you.

@@ -140,7 +140,7 @@ app.post('/checkout', async (req, res) => {
           price_data: {
             currency: 'usd',
             product_data: { name: 'Custom Coloring Book' },
-            unit_amount: Math.round(images.length * 1.0 * 100),
+            unit_amount: Math.round(images.length * 1.99 * 100),
           },
           quantity: 1,
         },

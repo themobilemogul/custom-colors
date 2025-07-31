@@ -34,7 +34,7 @@ const faqs = [
     a: "Not yet but soon!"
   },
   {
-    q: "why is coloring book page look weird?",
+    q: "Why does my coloring book page look weird?",
     a: "Our model is still learning so you may get an unexpected result. Don't worry we are working on making our model better every day!"
   },
   {
@@ -46,8 +46,9 @@ const faqs = [
     a: "By checking out you agree that all sales are final. If you have any concerns please contact us at info@customcolors.store"
   },
   { q: "What pictures make the best coloring book pages?",
-    a: "Use well-lit photos with minimal shadows and simple backgrounds. Less busy images produce cleaner results."
+    a: "Use well-lit photos with minimal shadows and simple backgrounds. Less busy images produce cleaner results." 
   }
+
 ];
 
 const CreatePage = () => {
