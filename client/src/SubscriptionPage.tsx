@@ -12,7 +12,7 @@ const SubscriptionPage = () => {
           Monthly Coloring Book Subscriptions
         </h1>
         <p className="text-md font-semibold text-blue-500 mb-6">
-          🎨 Coming August 2025 — stay tuned!
+          🎨 Coming Fall 2025 — stay tuned!
         </p>
         <p className="text-lg text-gray-600 mb-10">
           We're putting the final touches on our monthly subscription service. Soon, you'll be able to receive themed coloring pages straight to your inbox or mailbox each month — designed to bring peace, creativity, and joy to your day.

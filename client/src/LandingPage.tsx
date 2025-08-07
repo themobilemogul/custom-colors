@@ -9,7 +9,7 @@ const LandingPage = () => {
       <Header />
 
       {/* Hero */}
-      <section className="text-center px-4 py-12 max-w-8xl mx-auto">
+      <section className="text-center px-4 py-8 max-w-8xl mx-auto">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-blue-700 mb-6">
           Create Custom Coloring Books
         </h2>
@@ -23,47 +23,8 @@ const LandingPage = () => {
           Start Creating
         </Link>
       </section>
-
-      {/* Rotating Gallery */}
-<section className="w-full flex justify-center items-center mb-8 px-4 overflow-hidden">
-  <div className="max-w-7xl w-full">
-    <RotatingGallery />
-  </div>
-</section>
-
-      {/* Offerings */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6 py-8">
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
-          <h3 className="text-xl font-semibold text-blue-700 mb-3">Premade Books</h3>
-          <p className="text-gray-600 mb-4">
-            Curated coloring books made by artists and our community. Perfect as gifts or personal inspiration.
-          </p>
-          <Link to="/shop" className="text-blue-500 font-medium hover:underline">
-            View Shop →
-          </Link>
-        </div>
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
-          <h3 className="text-xl font-semibold text-blue-700 mb-3">Custom Coloring Books</h3>
-          <p className="text-gray-600 mb-4">
-            Create a custom coloring book perfect for a birthday, anniversary, or just to make someone happy.
-          </p>
-          <Link to="/create" className="text-blue-500 font-medium hover:underline">
-            Create Now →
-          </Link>
-        </div>
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
-          <h3 className="text-xl font-semibold text-blue-700 mb-3">Coloring Book Subscription</h3>
-          <p className="text-gray-600 mb-4">
-            Get themed coloring pages sent to your inbox or mailbox monthly. Cancel anytime.
-          </p>
-          <Link to="/subscription" className="text-blue-500 font-medium hover:underline">
-            Learn More →
-          </Link>
-        </div>
-      </section>
-
 {/* Transformation Gallery */}
-<section className="py-8 px-6 flex flex-col items-center">
+<section className="py68 px-6 flex flex-col items-center">
   <h3 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-10 text-center">
     From Photo to Coloring Page to Masterpiece
   </h3>
@@ -108,13 +69,48 @@ const LandingPage = () => {
 </section>
 
 
+      {/* Offerings */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6 py-8">
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
+          <h3 className="text-xl font-semibold text-blue-700 mb-3">Custom Coloring Books</h3>
+          <p className="text-gray-600 mb-4">
+            Create a custom coloring book perfect for a birthday, anniversary, or just to make someone happy.
+          </p>
+          <Link to="/create" className="text-blue-500 font-medium hover:underline">
+            Create Now →
+          </Link>
+        </div>
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
+          <h3 className="text-xl font-semibold text-blue-700 mb-3">Premade Books</h3>
+          <p className="text-gray-600 mb-4">
+            Curated coloring books made by artists and our community. Perfect as gifts or personal inspiration.
+          </p>
+          <Link to="/shop" className="text-blue-500 font-medium hover:underline">
+            View Shop →
+          </Link>
+        </div>
+        
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition text-center">
+          <h3 className="text-xl font-semibold text-blue-700 mb-3">Coloring Book Subscription</h3>
+          <p className="text-gray-600 mb-4">
+            Get themed coloring pages sent to your inbox or mailbox monthly. Cancel anytime.
+          </p>
+          <Link to="/subscription" className="text-blue-500 font-medium hover:underline">
+            Learn More →
+          </Link>
+        </div>
+      </section>
+
+
+
+
 
 
 
        {/* Mission */}
 <section className="py-8 px-6">
   <div className="bg-white rounded-2xl shadow-lg p-10 max-w-3xl mx-auto border border-blue-100 hover:shadow-xl transition text-center">
-    <h3 className="text-4xl sm:text-3xl font-extrabold text-blue-700 mb-6">Mission</h3>
+    <h3 className="text-4xl sm:text-3xl font-extrabold text-blue-700 mb-6">About Us</h3>
     <p className="text-gray-600 text-lg leading-relaxed">
       Custom Colors was born from a simple belief: creativity can be therapeutic. In a world filled with stress, screens, and chaos, we wanted to create a space where anyone—of any age—could slow down, reflect, and create something beautiful. 
       <br /><br />
