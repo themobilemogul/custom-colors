@@ -2,13 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  appType: 'spa',          // 👈 ensures SPA fallback in preview mode
   plugins: [react()],
   server: {
-    port: 3000, // ✅ for local development, Stripe success_url should use this port
+    port: 3000,
   },
-  publicDir: 'public', // ✅ ensures _redirects and other static assets are copied
+  publicDir: 'public',     // copies _redirects to dist
   build: {
-    outDir: 'dist', // default, but explicit is better
+    outDir: 'dist',
     emptyOutDir: true,
   },
 });
